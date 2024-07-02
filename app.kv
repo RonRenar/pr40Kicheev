@@ -1,0 +1,10 @@
+#:import MDTextField kivymd.uix.textfield.MDTextField
+
+<TimePickerLayout>:
+    orientation: 'vertical'
+    MDLabel:
+        id: time_label
+        text: "Выберите время"
+    MDFlatButton:
+        text: "Открыть TimePicker"
+        on_release: root.show_time_picker()
